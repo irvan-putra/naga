@@ -74,6 +74,7 @@ no Python, no server, hostable on GitHub Pages:
 | `web/demo1/` | MediaPipe PoseLandmarker | Webcam people counter + raised hands; feeds Demo 2 via localStorage |
 | `web/demo2-stlite/` | stlite (real Streamlit in Pyodide) | Reads Demo 1's counts live; labeled simulation fallback |
 | `web/demo3/` | MQTT.js over `wss://broker.emqx.io:8084` | Phone IMU -> public broker -> live feed + shake detection; simulator fallback |
+| [Historical simulation lab](https://vanipy.com/naga/demo-lab-simulation/) | Built-in React wrapper | Four portable demonstrations with simulated controls; no actual sensors or camera |
 
 First load needs internet (models/wheels from public CDNs, then cached).
 Demo 3 relays through a free public broker by design.
@@ -89,6 +90,10 @@ gh api repos/{owner}/edge-ai-multimodal-demos/pages -X POST -f "source[branch]=m
 
 (The repo root `index.html` redirects into `web/`, so serving from the root works as-is.)
 
+
+## Historical simulation lab
+
+A separately labeled, portable browser page with simulations of all four demonstrations is published at [vanipy.com/naga/demo-lab-simulation](https://vanipy.com/naga/demo-lab-simulation/). It has no microphone, camera, sensor or network access. The [source and audited historical demo archive](demo-lab-simulation/) are included here. The archive is not the current repository, and its external dependencies and hardware behavior are not claimed to work today.
 
 ## Illustrations
 

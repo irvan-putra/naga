@@ -1,0 +1,11 @@
+import React from 'react';
+export const FileCard=({children}:any)=><main><p className="historic">Historical browser simulations. No microphone, camera, sensor or network connection is used by this page. Simulated state resets when it reloads.</p>{children}</main>;
+export const Header=({title,intro}:any)=><header><h1>{title}</h1><p>{intro}</p></header>;
+export const Group=({label,children}:any)=><section><h2>{label}</h2>{children}</section>;
+export const Paragraph=({children}:any)=><p>{children}</p>;
+export const Caption=({children}:any)=><p className="caption">{children}</p>;
+export const Closing=({children}:any)=><footer>{children}</footer>;
+export const FileButton=({children,variant,...p}:any)=><button {...p}>{children}</button>;
+export const Facts=({items}:any)=><dl className="facts">{items.map((x:any)=><div key={x.label}><dt>{x.label}</dt><dd>{x.value}</dd></div>)}</dl>;
+export const Callout=({title,children}:any)=><aside className="callout"><strong>{title}</strong><p>{children}</p></aside>;
+export const Sparklines=({label,series}:any)=><div className="sparklines"><p>{label}</p>{series.map((s:any,i:number)=><div key={s.name}><strong>{s.name}</strong><svg viewBox="0 0 400 100" role="img" aria-label={s.name+' simulated history'}><polyline fill="none" stroke={i?'#8460a8':'#167467'} strokeWidth="3" points={s.values.map((v:number,j:number)=>`${j*400/29},${90-v*12}`).join(' ')}/></svg></div>)}</div>;
