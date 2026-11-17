@@ -88,3 +88,14 @@ gh api repos/{owner}/edge-ai-multimodal-demos/pages -X POST -f "source[branch]=m
 ```
 
 (The repo root `index.html` redirects into `web/`, so serving from the root works as-is.)
+
+
+## Illustrations
+
+![Illustration of a phone showing audience silhouettes linked to microphone, hand, chart and chip icons.](assets/illustrations/naga-phone-sensor-illustration.png)
+
+*Illustrative artwork for the Edge AI demo code. It is not an application screenshot or proof of a working people counter.*
+
+![Illustration of voice, vision and motion inputs feeding a laptop with signal and pose panels.](assets/illustrations/edge-ai-demo-lab-illustration.png)
+
+*Additional concept illustration, not a real application screenshot or evidence of a completed live demo. The examples and demos here should be treated as simulations unless a live run is shown.*
