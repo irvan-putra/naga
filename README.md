@@ -83,9 +83,9 @@ Demo 3 relays through a free public broker by design.
 
 ```bash
 git init && git add -A && git commit -m "Edge AI demo lab"
-gh repo create edge-ai-multimodal-demos --public --source=. --push
-gh api repos/{owner}/edge-ai-multimodal-demos/pages -X POST -f "source[branch]=main" -f "source[path]=/"
-# live at https://<username>.github.io/edge-ai-multimodal-demos/ in ~1 minute
+gh repo create naga --public --source=. --push
+gh api repos/{owner}/naga/pages -X POST -f "source[branch]=main" -f "source[path]=/"
+# live at https://<username>.github.io/naga/ in ~1 minute (this copy: https://vanipy.com/naga/)
 ```
 
 (The repo root `index.html` redirects into `web/`, so serving from the root works as-is.)

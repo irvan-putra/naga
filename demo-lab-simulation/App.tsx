@@ -153,7 +153,7 @@ export function App() {
   }, [people, hands]);
   const onPeople = (p: number, h: number) => { setPeople(p); setHands(h); };
 
-  const zipHref = './edge-ai-multimodal-demos-archive.zip';
+  const zipHref = './naga-demo-lab-archive.zip';
 
   return (
     <FileCard>
@@ -197,7 +197,7 @@ export function App() {
       <Group label="Get the code · Run the real demos">
         <Paragraph>The zip below is the historical demo-code snapshot, not the current repository. Python originals run on a laptop (python -m hub, pick a demo); the web/ folder holds the browser editions - historical browser variants require their external model/CDN dependencies and browser permissions. Compatibility and current deployment are not asserted by this archive.</Paragraph>
         <div className="btn-row">
-          <a className="download-btn" href={zipHref} download="edge-ai-multimodal-demos.zip">Download the demo repo (.zip)</a>
+          <a className="download-btn" href={zipHref} download="naga-demos.zip">Download the demo repo (.zip)</a>
         </div>
         <Callout title="What is inside" tone="note">
           hub/ launcher plus demo0 voice deck, demo1 people counter, demo2 Streamlit dashboard, demo3 MQTT motion feed - and web/ browser editions using transformers.js, MediaPipe, stlite and MQTT.js, historical browser sources.
