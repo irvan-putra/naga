@@ -104,3 +104,7 @@ A separately labeled, portable browser page with simulations of all four demonst
 ![Illustration of voice, vision and motion inputs feeding a laptop with signal and pose panels.](assets/illustrations/edge-ai-demo-lab-illustration.png)
 
 *Additional concept illustration, not a real application screenshot or evidence of a completed live demo. The examples and demos here should be treated as simulations unless a live run is shown.*
+
+---
+
+Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.
